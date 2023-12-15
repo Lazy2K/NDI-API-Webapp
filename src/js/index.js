@@ -7,12 +7,12 @@ const ndi_configuration_request_url = `${ndi_base_url}/v1/configuration`;
 const ndi_configuration_request_headers = { method: "POST" };
 
 // Write a comment here
-$(function () {
+document.addEventListener("DOMContentLoaded", () => {
   fetch(ndi_sources_request_url, ndi_sources_request_headers)
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
+      // Code for what to do with the sources goes in here
     });
 });
