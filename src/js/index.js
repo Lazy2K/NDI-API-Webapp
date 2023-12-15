@@ -8,11 +8,17 @@ const ndi_configuration_request_headers = { method: "POST" };
 
 // Write a comment here
 document.addEventListener("DOMContentLoaded", () => {
+  const video_sources_selector = document.getElementById("video-source");
   fetch(ndi_sources_request_url, ndi_sources_request_headers)
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      // Code for what to do with the sources goes in here
+      data.ndi_sources.forEach((source) => {
+        var option = document.createElement("option");
+        option.innerHTML = source;
+        option.value = source;
+        video_sources_selector.appendChild(option);
+      });
     });
 });
