@@ -8,17 +8,22 @@ const ndi_configuration_request_headers = { method: "POST" };
 
 // Write a comment here
 document.addEventListener("DOMContentLoaded", () => {
-  const video_sources_selector = document.getElementById("video-source");
+  const video_sources_selector_1 = document.getElementById("video-source-1");
+  const video_sources_selector_2 = document.getElementById("video-source-2");
   fetch(ndi_sources_request_url, ndi_sources_request_headers)
     .then((response) => {
       return response.json();
     })
     .then((data) => {
       data.ndi_sources.forEach((source) => {
-        var option = document.createElement("option");
-        option.innerHTML = source;
-        option.value = source;
-        video_sources_selector.appendChild(option);
+        var option_1 = document.createElement("option");
+        var option_2 = document.createElement("option");
+        option_1.innerHTML = source;
+        option_1.value = source;
+        option_2.innerHTML = source;
+        option_2.value = source;
+        video_sources_selector_1.appendChild(option_1);
+        video_sources_selector_2.appendChild(option_2);
       });
     });
 });
