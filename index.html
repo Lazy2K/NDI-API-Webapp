@@ -8,18 +8,28 @@
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
-    <select name="video-source-1" id="video-source-1">
-      <option value="none">Video Source</option>
-      <optgroup label="Video Sources"></optgroup>
-    </select>
-
-    <select name="video-source-2" id="video-source-2">
-      <option value="none">Video Source</option>
-      <optgroup label="Video Sources"></optgroup>
-    </select>
-
-    <button id="source-button-1">Source 1</button>
-    <button id="source-button-2">Source 2</button>
+    <div class="app-container">
+      <div class="column-container">
+        <div class="column-inner">
+          <div>
+            <select name="video-source-1" id="video-source-1">
+              <option value="none">Video Source</option>
+              <optgroup label="Video Sources"></optgroup>
+            </select>
+          </div>
+          <button id="source-button-1">Source 1</button>
+        </div>
+        <div class="column-inner">
+          <div>
+            <select name="video-source-2" id="video-source-2">
+              <option value="none">Video Source</option>
+              <optgroup label="Video Sources"></optgroup>
+            </select>
+          </div>
+          <button id="source-button-2">Source 2</button>
+        </div>
+      </div>
+    </div>
 
     <script src="src/js/index.js"></script>
   </body>

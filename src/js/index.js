@@ -1,4 +1,4 @@
-const ndi_base_url = "http://192.168.0.21";
+const ndi_base_url = "http://localhost";
 
 // Write a comment here
 const ndi_sources_request_url = `${ndi_base_url}/v1/sources`;
