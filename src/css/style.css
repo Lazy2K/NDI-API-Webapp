@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
+
 body {
   width: 100%;
   height: 100vh;
   padding: 0px;
   margin: 0px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .app-container {
@@ -24,4 +27,39 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.source-button {
+  width: 100%;
+  padding: 4rem;
+  margin: 2rem;
+  border: 0px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+}
+
+.source-button:hover {
+  filter: brightness(90%);
+}
+
+.red {
+  background-color: #c5283d;
+}
+
+.blue {
+  background-color: #255f85;
+}
+
+.source-select {
+  width: 100%;
+  padding: 1rem;
+  border: 0px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.full-width {
+  width: 100%;
 }
